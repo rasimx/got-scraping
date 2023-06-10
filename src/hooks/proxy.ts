@@ -47,6 +47,7 @@ async function getAgents(parsedProxyUrl: URL, rejectUnauthorized: boolean) {
         // The sockets won't be reused, no need to keep them
         maxFreeSockets: 0,
         maxEmptySessions: 0,
+        timeout: 10000,
     };
 
     // Native `http.Agent` options
